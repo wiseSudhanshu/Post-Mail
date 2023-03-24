@@ -73,8 +73,6 @@ function send_daily_posts_email() {
     // Send email
     wp_mail( get_option( 'admin_email' ), 'Daily Posts', $message );
 }
-   
-add_action('publish_post','send_daily_posts_email');
 
 function sr_found_meta_description($htmlResponse)
 {
